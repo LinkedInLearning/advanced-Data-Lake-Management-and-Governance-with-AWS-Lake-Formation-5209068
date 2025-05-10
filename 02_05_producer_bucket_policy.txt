@@ -1,0 +1,26 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Example permissions",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "<consumer-role-arn>"
+			},
+			"Action": "s3:ListBucket",
+			"Resource": "arn:aws:s3:::lil-lf-demo"
+		},
+		{
+			"Sid": "Example2",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "<consumer-role-arn>"
+			},
+			"Action": "s3:GetObject",
+			"Resource": [
+				"arn:aws:s3:::lil-lf-demo/processed/legacycardsdb/",
+				"arn:aws:s3:::lil-lf-demo/processed/legacycardsdb/*"
+			]
+		}
+	]
+}

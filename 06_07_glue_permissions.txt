@@ -1,0 +1,39 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "GluePermissions",
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetDatabases",
+                "glue:GetDatabase",
+                "glue:GetTables",
+                "glue:GetTableVersions",
+                "glue:GetTableVersion",
+                "glue:GetTable"
+            ],
+            "Resource": [
+                "arn:aws:glue:us-east-1:337078722066:catalog",
+                "arn:aws:glue:us-east-1:337078722066:database/customerdb",
+                "arn:aws:glue:us-east-1:337078722066:table/customerdb/*"
+            ]
+        },
+        {
+            "Sid": "ResourcelinkPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetDatabases",
+                "glue:GetDatabase",
+                "glue:GetTables",
+                "glue:GetTableVersions",
+                "glue:GetTableVersion",
+                "glue:GetTable"
+            ],
+            "Resource": [
+                "arn:aws:glue:us-east-1:580464414983:catalog",
+                "arn:aws:glue:us-east-1:580464414983:database/rl_customerdb",
+                "arn:aws:glue:us-east-1:580464414983:table/rl_customerdb/*"
+            ]
+        }
+    ]
+}

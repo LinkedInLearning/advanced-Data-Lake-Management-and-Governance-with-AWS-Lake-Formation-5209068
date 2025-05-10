@@ -1,0 +1,11 @@
+OrderID,CustomerID,OrderDate,Amount,Status
+101,1,2024-01-10,200.50,Completed
+102,2,2024-01-12,150.75,Pending
+103,3,2024-01-14,320.00,Completed
+104,4,2024-01-16,400.00,Cancelled
+105,5,2024-01-18,250.25,Completed
+106,6,2024-01-20,180.00,Completed
+107,7,2024-01-22,500.00,Pending
+108,8,2024-01-24,120.00,Completed
+109,9,2024-01-26,300.50,Completed
+110,10,2024-01-28,75.00,Completed

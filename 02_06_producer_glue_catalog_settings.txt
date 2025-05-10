@@ -1,0 +1,11 @@
+{
+  "Version" : "2012-10-17",
+  "Statement" : [ {
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : "arn:aws:iam::580464414983:user/<consumer-user>"
+    },
+    "Action" : [ "glue:GetTable", "glue:GetTables", "glue:GetDatabase", "glue:GetDatabases", "glue:GetTableVersion", "glue:GetTableVersions", "glue:GetPartition", "glue:GetPartitions" ],
+    "Resource" : [ "arn:aws:glue:us-east-1:337078722066:catalog", "arn:aws:glue:us-east-1:337078722066:database/legacycardsdb", "arn:aws:glue:us-east-1:337078722066:table/legacycardsdb/creditcards" ]
+  } ]
+}

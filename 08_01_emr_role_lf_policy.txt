@@ -1,0 +1,46 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "glue:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "Statement2",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::lil-lf-logs-local",
+                "arn:aws:s3:::lil-lf-logs-local/*"
+            ]
+        },
+        {
+            "Sid": "Statement3",
+            "Effect": "Allow",
+            "Action": [
+                "emr-serverless:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "Statement4",
+            "Effect": "Allow",
+            "Action": [
+                "lakeformation:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "GluePermissions",
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetDatabases",
+                "glue:GetDatabase",
+                "glue:GetTables",
+                "glue:GetTableVersions",
+                "glue:GetTableVersion",
+                "glue:GetTable"
+            ],
+            "Resource": [
+                "arn:aws:glue:<aws_region>:<your_aws_account_id>:catalog",
+                "arn:aws:glue:<aws_region>:<your_aws_account_id>:database/<your_database_name>",
+                "arn:aws:glue:<aws_region>:<your_aws_account_id>:table/<your_database_name>/*"
+            ]
+        }
+    ]
+}

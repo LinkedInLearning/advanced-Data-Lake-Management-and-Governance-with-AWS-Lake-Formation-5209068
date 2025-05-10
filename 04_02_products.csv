@@ -1,0 +1,11 @@
+ProductID,ProductName,Category,Price,Stock
+201,Laptop,Electronics,800.00,50
+202,Smartphone,Electronics,500.00,100
+203,Headphones,Accessories,100.00,200
+204,Desk Chair,Furniture,150.00,75
+205,Coffee Machine,Appliances,120.00,60
+206,Air Conditioner,Appliances,350.00,30
+207,Printer,Electronics,250.00,40
+208,Desk Lamp,Furniture,50.00,150
+209,Monitor,Electronics,200.00,80
+210,Keyboard,Accessories,30.00,500

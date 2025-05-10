@@ -1,0 +1,40 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "athena:StartQueryExecution",
+                "athena:GetQueryExecution",
+                "athena:GetQueryResults",
+                "athena:GetWorkGroup",
+                "athena:GetDataCatalog"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::lil-lf-logs",
+                "arn:aws:s3:::lil-lf-logs/*"
+            ]
+        },
+        {
+            "Sid": "gluecatalog",
+            "Effect": "Allow",
+            "Action": [
+                "glue:*"
+            ],
+            "Resource": [
+                "arn:aws:glue:us-east-1:337078722066:catalog",
+                "arn:aws:glue:us-east-1:337078722066:database/legacycardsdb",
+                "arn:aws:glue:us-east-1:337078722066:table/legacycardsdb/*"
+            ]
+        }
+    ]
+}

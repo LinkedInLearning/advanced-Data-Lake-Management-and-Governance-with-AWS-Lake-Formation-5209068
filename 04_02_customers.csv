@@ -1,0 +1,11 @@
+CustomerID,Name,Email,PhoneNumber,City
+1,John Doe,john.doe@email.com,1234567890,New York
+2,Jane Smith,jane.smith@email.com,9876543210,Los Angeles
+3,Alice Brown,alice.brown@email.com,5551234567,Chicago
+4,Bob Johnson,bob.johnson@email.com,6669876543,Houston
+5,Emily Davis,emily.davis@email.com,7774567890,Seattle
+6,Liam Wilson,liam.wilson@email.com,8886543210,Miami
+7,Olivia Moore,olivia.moore@email.com,9995554321,Boston
+8,Noah Taylor,noah.taylor@email.com,1112223333,Denver
+9,Ava Martinez,ava.martinez@email.com,2223334444,Atlanta
+10,Sophia White,sophia.white@email.com,3334445555,Dallas

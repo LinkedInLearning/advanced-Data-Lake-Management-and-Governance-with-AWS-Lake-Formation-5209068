@@ -1,0 +1,63 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Athenapermissions",
+            "Effect": "Allow",
+            "Action": [
+                "athena:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "Athenalogs",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::l<log-bucket-name>",
+                "arn:aws:s3:::<log-bucket-name>/*"
+            ]
+        },
+                {
+            "Sid": "S3Read",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::lil-lf-demo/processeddata/legacycardsdb/*"
+            ]
+        },
+        {
+            "Sid": "gluepermissions",
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetDatabase",
+                "glue:GetDatabases",
+                "glue:GetTable",
+                "glue:GetTables",
+                "glue:GetTableVersion",
+                "glue:GetTableVersions"
+            ],
+            "Resource": [
+                "arn:aws:glue:us-east-1:<producer-acc-id>:catalog",
+                "arn:aws:glue:us-east-1:<producer-acc-id>:database/legacycardsdb",
+                "arn:aws:glue:us-east-1:<producer-acc-id>:table/legacycardsdb/*"
+            ]
+        },
+        {
+            "Sid": "s3listbucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListAllMyBuckets"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

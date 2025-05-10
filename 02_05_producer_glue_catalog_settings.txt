@@ -1,0 +1,11 @@
+{
+  "Version" : "2012-10-17",
+  "Statement" : [ {
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : "arn:aws:iam::<consumer-acc-id>:role/<consumer-role>"
+    },
+    "Action" : "glue:*",
+    "Resource" : [ "arn:aws:glue:us-east-1:<producer-acc-id>:catalog", "arn:aws:glue:us-east-1:<producer-acc-id>:database/<db-name>", "arn:aws:glue:us-east-1:<producer-acc-id>:table/<db-name>/*" ]
+  } ]
+}

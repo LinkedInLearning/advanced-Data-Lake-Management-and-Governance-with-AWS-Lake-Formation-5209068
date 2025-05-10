@@ -1,0 +1,36 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "GluePermissions",
+            "Effect": "Allow",
+            "Action": [
+                "glue:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "lfpermissions",
+            "Effect": "Allow",
+            "Action": [
+                "lakeformation:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::lil-lf-logs-local",
+                "arn:aws:s3:::lil-lf-logs-local/*"
+            ]
+        }
+    ]
+}
